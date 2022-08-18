@@ -11,7 +11,7 @@ function validaNombre() {
   if (tecla == 13) {
 
     if (esNumero(nomb) || nomb == "" || nomb.charAt(0) == " ") {
-      alert('Dato no válido')
+      alert("Dato ingresado no válido")
       return true;
     }
     else {
@@ -23,12 +23,14 @@ function validaNombre() {
 
 function validaApe() {
   var apel = Formulario.ape.value;
-
-  if (esNumero(apel) ||  apel == "" || apel.charAt(0) == " ") {
-    alert("No se permiten espacios vacíos.")
-  }
-  else {
-    Formulario.curso.focus();
+  var tecla = window.event.keyCode;
+  if (tecla == 13) {
+    if (esNumero(apel) ||  apel == "" || apel.charAt(0) == " ") {
+      alert("Dato ingresado no válido")
+    }
+    else {
+      Formulario.curso.focus();
+    }
   }
 }
 
@@ -37,19 +39,21 @@ function validaCorreo() {
   arroba = correo.indexOf("@");
   punto = correo.lastIndexOf(".");
   extension = correo.split(".")[1];
-
-  if (arroba < 1 || (punto - arroba < 2) || correo === "") {
-    alert("El correo " + correo + " No es válido ");
-  } else {
-    if (extension.length > 3) {
-      alert("El correo " + correo + " No es válido ");
-      return;
+  var tecla = window.event.keyCode;
+  if (tecla == 13) {
+    if (arroba < 1 || (punto - arroba < 2) || correo == "") {
+      alert("El correo no es válido ");
+    } else {
+      if (extension.length > 3) {
+        alert("El correo no es válido ");
+        return;
+      }
+      alert("El correo es válido ");
+      Formulario.message.focus;
     }
-    alert("El correo " + correo + " Es válido ");
-    Formulario.message.focus;
   }
-
 }
+
 
 
 
