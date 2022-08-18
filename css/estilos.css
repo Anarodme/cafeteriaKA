@@ -470,7 +470,8 @@ li{
     padding-top: 45px;
     margin: auto;
 }
-.titu{ color: white;
+.titu{ 
+    color: white;
     font-weight: 700px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(72,31,1);
@@ -481,6 +482,8 @@ li{
     justify-content: center;
     margin-left: 60px;
     margin-right: 60px;
+    font-size: 25px;
+
 }
 
 .h4_2{
@@ -495,6 +498,8 @@ li{
     justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
+    font-size: 25px;
+
 }
 td{
     font-size: 16px;
@@ -546,7 +551,7 @@ td{
 .ubi{
     padding-top: 40px;
     float: left;
-    height: 600px;
+    height: 550px;
     width: 400px;
     text-align: center;
 }
@@ -569,7 +574,7 @@ td{
 }
 .ubi2{
     float: left;
-    height: 600px;
+    height: 550px;
     width: 600px;
     text-align: center;
 }
