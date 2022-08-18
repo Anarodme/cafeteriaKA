@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css
+/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Cormorant+Garamond:ital,wght@1,600&family=Dancing+Script:wght@700&family=Lobster&family=Nanum+Gothic&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <title>Cafetería K&A</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light fondo">
+            <div class="container-fluid">
+                <img class="icono" src="img/logo.png" alt="">
+                <span class="text-dark titulo">Cafetería K&A</span>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link text-secondary" href="index.html">Inicio<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="Menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="SobreNosotros.html">Sobre nosotros</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="ordenar.html">Ordenar</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="contactar.html">Contactar</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="ubicacion.html">Ubicación</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section class="pedidos">
+            <form action="#" class="credit-card-div" name="Formulario" id="Formulario">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="card" name="card"
+                                    placeholder="Enter Card Number" onkeypress="fValidarTarjeta()" required> <span
+                                    id="mastercard_error" style="color: #f00;"></span><br>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span id="expiM" name="expiM" class="help-block text-muted small-font"> Expiry
+                                    Month</span>
+                                <input type="text" class="form-control" placeholder="MM" required maxlength="2" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span id="expiY" name="expiY" class="help-block text-muted small-font"> Expiry
+                                    Year</span>
+                                <input type="text" class="form-control" placeholder="YY" required
+                                    onkeypress="validarAño()" maxlength="4" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span id="cvv" class="help-block text-muted small-font"> CCV</span>
+                                <input type="text" class="form-control" placeholder="CCV" required maxlength="3" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-12 pad-adjust">
+
+                                <input type="text" class="form-control" placeholder="Name On The Card" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 pad-adjust">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked class="text-muted"> Save details for fast
+                                        payments <a href="#"> learn how ?</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                <a href="ordenar.html"><input type="submit" class="btn btn-danger" value="CANCEL"></a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                <input type="button" class="btn btn-warning btn-guardar" value="PAY NOW"
+                                    onclick="pedir()">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="Js/validarPedidos.js"></script>
+
+
+</body>
+
+
+</html>

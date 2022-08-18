@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css
+/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arima:wght@300&family=Cormorant+Garamond:ital,wght@1,600&family=Dancing+Script:wght@700&family=Lobster&family=Nanum+Gothic&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">;
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Ordenar - Cafetería K&A</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light fondo">
+            <div class="container-fluid">
+                <img class="icono" src="img/logo.png" alt="">
+                <span class="text-dark titulo">Cafetería K&A</span>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link text-secondary" href="index.html">Inicio<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="Menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="SobreNosotros.html">Sobre nosotros</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="ordenar.html">Ordenar</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="contactar.html">Contactar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="ubicacion.html">Ubicación</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div id="padre">
+            <img class="img-fluid card-img" src="img/bg.jpg" alt="">
+
+            <nav>
+                <h1>Online Order</h1>
+                <p>Coffee always is a good idea</p>
+            </nav>
+            <section class="navegacion">
+                <a href="#postres"></a><button type="button" class="btn btn-secondary">Bakery</button></a>
+                <a href="#lunch"><button type="button" class="btn btn-secondary">Lunch</button></a>
+
+
+            </section>
+            <section class="section-postres">
+                <a name="postres">
+                    <h3>Bakery</h3>
+                </a>
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="img/croissants.jpg" alt="Card image cap">
+                                    <h5 class="card-title">Croissant (Plain/Chocolate)</h5>
+                                    <p class="card-text">El croissant de tus sueños a tu alcance. Acércate a nosotros y
+                                        te lo crearemos lo antes posible.</p>
+                                    <p class="card-text">₡1,200</p>
+                                    <a  type="button"  onclick="pedir()" class="card-link">Ordenar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="img/muffin.jpg" alt="Card image cap">
+                                    <h5 class="card-title">Daily Muffin</h5>
+                                    <p class="card-text">La repostería es un arte hermoso y la ponemos a tu disposición
+                                        siempre.</p>
+                                    <p class="card-text">₡2,000</p>
+                                    <a href="pedidos.html" class="card-link">Ordenar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="img/cheesecake.jpg" alt="Card image cap">
+                                    <h5 class="card-title">Cheesecake</h5>
+                                    <p class="card-text">Preparamos sabrosos Cheesecakes que permanecerán en tu corazón
+                                        para siempre.</p>
+                                    <p class="card-text">₡3,500</p>
+                                    <a href="pedidos.html" class="card-link">Ordenar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section-lunch">
+
+                <a name="lunch">
+                    <h3>Lunch</h3>
+                </a>
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="img/lasaña.jpg" alt="Card image cap">
+                                    <h5 class="card-title">Lasaña</h5>
+                                    <p class="card-text">Nada más relajante que el aroma de una exquisita lasaña.</p>
+                                    <p class="card-text">₡3,000</p>
+                                    <a href="pedidos.html" class="card-link">Ordenar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="img/arrozconpollo.jpg" alt="Card image cap">
+                                    <h5 class="card-title">Arroz con pollo</h5>
+                                    <p class="card-text">Goza inteligentemente de los placeres de la mesa.</p>
+                                    <p class="card-text">₡3,500</p>
+                                    <a href="pedidos.html" class="card-link">Ordenar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="img/casado.jpg" alt="Card image cap">
+                                    <h5 class="card-title">Casado</h5>
+                                    <p class="card-text">Calidad y amor en cada cucharada.</p>
+                                    <p class="card-text">₡4,800</p>
+                                    <a href="" class="card-link">Ordenar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+
+
+
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logo.png" alt="Logo de K&A">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p class="texto">Cafetería K&A es una cafetería 100% costarricense, donde queremos que véas a K&A como
+                    algo más que una cafetería, sentilo como un lugar dónde podés venir a satisfacer tu espíritu, tu
+                    corazón y tu intelecto.
+
+                </p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>K&A</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

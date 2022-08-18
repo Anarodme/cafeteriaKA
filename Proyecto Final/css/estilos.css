@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{ color: rgb(72,31,1);
+    text-align: center;
+    font-weight: 700px;
+    padding-bottom: 5px;
+}
+html{
+    height: 80%;
+}
+
+.titulo{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    }
+.texto{
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+/*Header*/
+.icono{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+ }
+.fondo{
+    background-color:rgba(247,229,210,255)
+}
+
+.collapse .navbar-collapse{
+    float: right;
+    justify-content: space-between;
+    justify-items: right;
+}
+#content_div_one_photo {
+    height: 16rem;
+    width: 11rem;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+/*Main*/
+.padre{
+    position: relative;
+    display: inline-block;
+}  
+
+.tittle{
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    font-size: medium;
+
+}
+.carousel1{
+    width: 600px;
+    height: 100px;
+    align-items: center;
+}
+.carousel2{
+    width: 500px;
+    height: 50px;
+    align-items: center;
+}
+
+
+/*Carrusel de opciones*/
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    height: 100px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color: #686c5c;
+    font-family: 'Nanum Gothic';
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+#itemCarrousel-2{
+    background-color: #686c5c;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    font-family: 'Nanum Gothic';
+
+}
+
+#itemCarrousel-3{
+    background-color: #686c5c;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    font-family: 'Nanum Gothic';
+
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+/*Pie de Pagina*/
+footer{
+    background-color: #484c3c;
+    height: 80px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #484c3c;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #484c3c;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #484c3c;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #484c3c;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+main .container{
+    margin: auto;
+    padding: 15px;
+}
+.productos{
+    padding-top: 5px;
+    width: 270px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 16px;
+}
+/*Ordenar*/
+#padre p{
+    font-family: 'Varela';
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+#padre h1{
+    font-family: 'Aboreto';
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+#padre nav{
+    background-color: rgba(247,229,210,255);
+    height: 150px;
+}
+/*Section postres*/
+.section-postres{
+    background-color: white;
+    height: 450px;
+    padding: 50px;
+}
+.section-postres .card-title{
+    font-weight: bold;
+}
+.section-postres .card-text{
+    text-align: justify;
+}
+
+.section-postres .card-link{
+    text-decoration: none;
+}
+.section-postres h3{
+    font-family: 'Aboreto';
+    text-align: left;
+    font-weight: bold;
+}
+.section-postres .postre2{
+   float: right;
+}
+.section-postres .card{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 10px;
+}
+.section-postres img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navegacion{
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/*Section lunch*/
+.section-lunch{
+    background-color: white;
+    height: 450px;
+    padding: 50px;
+}
+.section-lunch .card-title{
+    font-weight: bold;
+}
+.section-lunch .card-text{
+    text-align: justify;
+}
+.section-lunch .card-link{
+    text-decoration: none;
+}
+
+.section-lunch h3{
+    font-family: 'Aboreto';
+    text-align: left;
+    font-weight: bold;
+}
+.section-lunch .postre2{
+   float: right;
+}
+.section-lunch .card{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 10px;
+}
+.section-lunch img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/*Media query*/
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/*Página de Contactar*/
+#padre .formulario{
+    height: 620px;
+    width: 1500px;
+    background-color: white;
+}
+#padre .form-part{
+    width: 450px;
+    height: 620px;
+    float: left;
+    align-items: center;
+}
+
+.aside2{
+    width: 950px;
+    height: 620px ;
+    float: left;
+}
+.aside2 img{
+    width: 490px;
+    height: 490px;
+    margin: 30px;
+    margin-left: 150px;
+    float: left;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.49);
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.49);;
+}
+
+.contacto{
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    background-color: white;
+    margin: 10px;
+    font-family: 'Aboreto';
+    
+}
+.contacto label{
+    display: block; 
+    font-weight: bold;
+    font-family: 'Aboreto';
+
+}
+.contacto div{
+    margin-bottom: 15px;
+}
+.contacto input[type='text'], .contacto textarea{
+    padding: 7px 6px;
+    width: 294px; 
+    border: 1px solid #CED5D7;
+    resize: none;
+    margin: 5px 0;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus{
+    outline: none;
+}
+.contacto input[type='email'], .contacto textarea{
+    padding: 7px 6px;
+    width: 294px; 
+    border: 1px solid #CED5D7;
+    resize: none;
+    margin: 5px 0;
+}
+
+/*Pedidos*/
+.pedidos{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+/*Formulario de pago*/
+.credit-card-div  span {
+     padding-top:10px; 
+     border: black  10px;
+}
+.credit-card-div img { 
+    padding-top:30px; 
+}
+.credit-card-div .small-font { 
+    font-size:9px; 
+}
+.credit-card-div .pad-adjust { 
+    padding-top:10px;
+}
+
+/*Sobre Nosotros*/
+.sobre{
+    height: 250px;
+    width: 1000px;
+    padding-top: 30px;
+    margin: auto;
+}
+.info{
+    height: 175px;
+    width: 1000px;
+    padding-top: 5px;
+    margin: auto;
+    background-color: rgb(235, 203, 163);
+    border-radius: 10px;
+}
+.info p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.info h3{
+    text-align: center;
+    color: rgb(72,31,1);
+    font-weight: bold;
+}
+.valores{
+    height: 200px;
+    width: 1000px;
+    padding-top: 10px;
+    margin: auto;
+}
+.valores h3{
+    text-align: center;
+    color: rgb(72,31,1);
+    font-weight: bold;
+}
+li{
+    font-weight: bold;
+}
+
+/*Menu*/
+.menu{
+    height: 500px;
+    width: 1100px;
+    margin: auto;
+}
+.men{
+    padding-top: 45px;
+    margin: auto;
+}
+.titu{ color: white;
+    font-weight: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(72,31,1);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.h4_2{
+    color: white;
+    font-weight: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(72,31,1);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+td{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: baseline;
+}
+
+.icoMen{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.icoMen2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.menu1{
+    height: 350px;
+    width: 367px;
+    float: left;
+    padding: 10px;
+}
+.menu2{
+    height: 350px;
+    width: 366px;
+    float: left;
+    padding: 10px;
+    padding-left: 35px;
+}
+
+.menu3{
+    height: 350px;
+    width: 366px;
+    float: left;
+    padding: 10px;
+}
+/*Ubicación*/
+.ubicacion{
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+}
+.ubi{
+    padding-top: 40px;
+    float: left;
+    height: 600px;
+    width: 400px;
+    text-align: center;
+}
+.ubi img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+.ubicacion h5{
+    text-align: center;
+    color: rgb(72,31,1);
+    font-weight: bold;
+    padding-top: 50px;
+}
+.ubi p{
+    font-family: 'Varela';
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px;
+}
+.ubi2{
+    float: left;
+    height: 600px;
+    width: 600px;
+    text-align: center;
+}
